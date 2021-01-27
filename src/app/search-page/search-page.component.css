@@ -1,0 +1,14 @@
+.app-container-row {
+    display: grid;
+    grid-template-rows: 30px 30px 40px 50px;
+  gap: 0px 0px;
+   margin: 0;
+  padding: 0;
+}
+
+.app-container-item {
+    background-color: white;
+  display: flex;
+  padding: 0;
+  margin: 0; 
+}

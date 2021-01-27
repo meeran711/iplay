@@ -1,0 +1,33 @@
+<!-- <a routerLink="" >Back</a>
+
+ <ul class="list-group">
+    <li class="list-group-item"
+        *ngFor="let track of results | async">
+      <img src="{{track.thumbnail}}"> <br>
+      {{track}}
+      <audio controls>
+        <source src={{track.link}} type="audio/mp4">
+      Your browser does not support the audio element.
+      </audio>
+    </li>
+  </ul> -->
+
+
+  <div id="row_cont" class="app-container-row">
+    <div class="app-container-item">
+      <a routerLink="" >Back</a>      
+    </div>
+    <div class="app-container-item">
+      <li
+        *ngFor="let track of results | async">
+      <img src="{{track.thumbnail}}" style="height:150px; width:150px"> <br/>
+      <p style="margin: 0; display: inline;font-weight: bold">{{track.track}} - </p>
+      <p style="margin: 0; display: inline;font-weight: bold; font-style: italic;">{{track.artist}}</p>
+      <p>Preview</p>
+      <audio controls>
+        <source src={{track.link}} type="audio/mp4">
+      Your browser does not support the audio element.
+      </audio>
+    </li>
+    </div>    
+  </div>
